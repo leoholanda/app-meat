@@ -1,0 +1,8 @@
+<div class="col-md-9 col-xs-12">
+  <app-item-cardapio
+    *ngFor="let item of menu | async" [menuItem]="item"
+   (add)="shppingCart.addItem($event)"></app-item-cardapio>
+</div>
+<div class="col-md-3 col-xs-12">
+  <app-shopping-cart #shppingCart></app-shopping-cart>
+</div>
