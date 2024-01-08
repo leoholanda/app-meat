@@ -18,7 +18,7 @@
           <th> ({{item.quantidade}}x) {{item.itemCardapio.name}}</th>
           <td class="text-right">{{ item.value() | currency: 'BRL': true }}</td>
           <td class="text-right">
-            <a (click)="removeItem(item)" class="btn btn-danger" data-toggle="tooltip" title="Excluir">
+            <a (click)="removeItem(item)" class="btn btn-danger" title="Excluir">
               <i class="fa fa-trash-o"></i></a>
           </td>
         </tr>
@@ -34,7 +34,7 @@
   <div class="box-footer" *ngIf="items().length">
     <div class="pull-right">
       <button (click)="clear()" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Limpar</button>
-      <a href="order.html" class="btn btn-success" style="margin-left: 8px"><i class="fa fa-credit-card"></i> Fechar Pedido</a>
+      <a [routerLink]="['/order']" class="btn btn-success" style="margin-left: 8px"><i class="fa fa-credit-card"></i> Fechar Pedido</a>
     </div>
   </div>
 </div>

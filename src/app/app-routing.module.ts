@@ -6,6 +6,7 @@ import { RestaurantsComponent } from "./restaurants/restaurants.component";
 import {RestaurantDetailComponent} from "./restaurant-detail/restaurant-detail.component";
 import {CardapioComponent} from "./restaurant-detail/cardapio/cardapio.component";
 import {AvaliacoesComponent} from "./restaurant-detail/avaliacoes/avaliacoes.component";
+import {OrderComponent} from "./order/order.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
       {path: 'avaliacoes', component: AvaliacoesComponent}
     ]
   },
+  {path: 'order', component: OrderComponent},
   {path: 'about', component: AboutComponent},
 ];
 

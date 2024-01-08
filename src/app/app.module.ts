@@ -19,6 +19,8 @@ import { AvaliacoesComponent } from './restaurant-detail/avaliacoes/avaliacoes.c
 
 import ptBR from '@angular/common/locales/pt'
 import {registerLocaleData} from "@angular/common";
+import { OrderComponent } from './order/order.component';
+import {FormsModule} from "@angular/forms";
 
 
 registerLocaleData(ptBR);
@@ -35,14 +37,16 @@ registerLocaleData(ptBR);
     CardapioComponent,
     ShoppingCartComponent,
     ItemCardapioComponent,
-    AvaliacoesComponent
+    AvaliacoesComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [RestaurantsService, {provide: LOCALE_ID, useValue: 'pt'}],
+  providers: [RestaurantsService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
