@@ -21,6 +21,8 @@ import ptBR from '@angular/common/locales/pt'
 import {registerLocaleData} from "@angular/common";
 import { OrderComponent } from './order/order.component';
 import {FormsModule} from "@angular/forms";
+import { InputComponent } from './shared/input/input.component';
+import { RadioComponent } from './shared/radio/radio.component';
 
 
 registerLocaleData(ptBR);
@@ -38,7 +40,9 @@ registerLocaleData(ptBR);
     ShoppingCartComponent,
     ItemCardapioComponent,
     AvaliacoesComponent,
-    OrderComponent
+    OrderComponent,
+    InputComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,
