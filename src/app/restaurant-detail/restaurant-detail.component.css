@@ -1,0 +1,19 @@
+a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a:link, a:active a:visited, a:hover {
+  text-decoration: none !important;
+}
+
+.back {
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  font-size: 20px !important;
+  margin-right: 12px;
+}
+
+
+

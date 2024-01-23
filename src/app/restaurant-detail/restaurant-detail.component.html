@@ -12,9 +12,9 @@
     <div class="col-xs-12">
       <div class="box box-solid">
         <div class="box-header with-border">
-          <i class="fa fa-home"></i>
+          <a (click)="back()"> <i class="back fa fa-chevron-left"></i></a>
 
-          <h3 class="box-title">{{restaurant?.name}}</h3><span class="pull-right"><i class="fa fa-star"></i> {{restaurant?.rating}}</span>
+          <h1 class="box-title">{{restaurant?.name}}</h1><span class="pull-right"><i class="fa fa-star"></i> {{restaurant?.rating}}</span>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -29,7 +29,15 @@
             <dd>{{restaurant?.about}}</dd>
             <dt>Horários</dt>
             <dd>{{restaurant?.hours}}</dd>
+            <dd><button *ngIf="!restaurant?.favorite" title="Favoritar"
+                        (click)="favoriteRestaurant()" class="btn btn-danger">
+              <i class="fa fa-heart-o"></i></button>
+            <button *ngIf="restaurant?.favorite" title="Desfavoritar"
+                    (click)="favoriteRestaurant()" class="btn btn-success">
+              <i class="fa fa-heart"></i></button></dd>
           </dl>
+
+
         </div>
         <!-- /.box-body -->
         <div class="box-footer detail-footer">

@@ -23,6 +23,9 @@ import { OrderComponent } from './order/order.component';
 import {FormsModule} from "@angular/forms";
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
+import { OrderItemsComponent } from './order/order-items/order-items.component';
+import { RestaurantsFavoritosComponent } from './restaurants/restaurant-favoritos/restaurants-favoritos.component';
+import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 
 
 registerLocaleData(ptBR);
@@ -42,7 +45,10 @@ registerLocaleData(ptBR);
     AvaliacoesComponent,
     OrderComponent,
     InputComponent,
-    RadioComponent
+    RadioComponent,
+    OrderItemsComponent,
+    RestaurantsFavoritosComponent,
+    DeliveryCostsComponent
   ],
   imports: [
     BrowserModule,

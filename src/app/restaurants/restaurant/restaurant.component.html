@@ -6,7 +6,8 @@
       <span class="place-info-box-text">{{restaurant?.name}}</span>
       <span class="place-info-box-star"><i class="fa fa-star"></i> {{restaurant?.rating}}</span>
       <span class="place-info-box-detail">{{restaurant?.category}}</span>
-      <span class="place-info-box-detail">{{restaurant?.deliveryEstimate}}</span>
+      <span class="place-info-box-detail">Entrega estimada: {{restaurant?.deliveryEstimate}}</span>
+      <i class="fa fa-heart" *ngIf="restaurant?.favorite" title="Favoritos"></i>
     </div>
   </div>
 </a>

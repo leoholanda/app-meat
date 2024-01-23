@@ -20,7 +20,7 @@ export class ShoppingCartService {
       (mItem)=> mItem.itemCardapio.id === itemCardapio.id)
 
     if(foundItem){
-      foundItem.quantidade = foundItem.quantidade + 1
+      this.increaseQty(foundItem)
     }else {
       this.items.push(new CarItem(itemCardapio))
     }
@@ -33,5 +33,16 @@ export class ShoppingCartService {
   total(): number {
     return this.items.map(item => item.value())
       .reduce((prev, value)=> prev + value, 0);
+  }
+
+  increaseQty(item: CarItem) {
+    item.quantidade++;
+  }
+
+  decreaseQty(item: CarItem) {
+    item.quantidade--;
+    if(item.quantidade ===0 ) {
+      this.remoteItem(item)
+    }
   }
 }

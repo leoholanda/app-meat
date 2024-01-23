@@ -7,4 +7,5 @@ export interface Restaurant {
   rating: number,
   imagePath: string,
   about: string
+  favorite: boolean
 }

@@ -2,7 +2,7 @@ import {Restaurant} from "./restaurant/restaurant.model";
 import {MEAT_API} from "../../app.api";
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {filter, Observable} from "rxjs";
 
 @Injectable()
 export class RestaurantsService {
@@ -24,4 +24,14 @@ export class RestaurantsService {
   findCardapioByRestaurant(id: string): Observable<any> {
     return this.http.get(`${MEAT_API}/restaurants/${id}/menu`)
   }
+
+  saveRestaurant(selectRestaurant: Restaurant) {
+      if(!selectRestaurant.id) {
+        return this.http.post(`${MEAT_API}/restaurants/restaurant`, selectRestaurant);
+      } else {
+        console.log(`saveRestaurant: ${selectRestaurant.favorite}`)
+        return this.http.put(`${MEAT_API}/restaurants/${selectRestaurant.id}`, selectRestaurant);
+      }
+  }
+
 }
