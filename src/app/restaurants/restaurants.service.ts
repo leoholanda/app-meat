@@ -1,8 +1,8 @@
 import {Restaurant} from "./restaurant/restaurant.model";
 import {MEAT_API} from "../../app.api";
 import {Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
-import {filter, Observable} from "rxjs";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {first, Observable} from "rxjs";
 
 @Injectable()
 export class RestaurantsService {
@@ -25,13 +25,19 @@ export class RestaurantsService {
     return this.http.get(`${MEAT_API}/restaurants/${id}/menu`)
   }
 
-  saveRestaurant(selectRestaurant: Restaurant) {
-      if(!selectRestaurant.id) {
-        return this.http.post(`${MEAT_API}/restaurants/restaurant`, selectRestaurant);
-      } else {
-        console.log(`saveRestaurant: ${selectRestaurant.favorite}`)
-        return this.http.put(`${MEAT_API}/restaurants/${selectRestaurant.id}`, selectRestaurant);
-      }
+  favoriteRestaurant(restaurant: Restaurant) {
+    const headers = new HttpHeaders();
+    headers.append('Content-Type', 'application/json')
+
+    return this.update(restaurant);
+
+  }
+
+  private update(retaurant: Partial<Restaurant>) {
+    const url = `${MEAT_API}/restaurants/${retaurant.id}`;
+    console.log(url)
+    return this.http.put<Restaurant>(url, retaurant)
+      .pipe(first());
   }
 
 }

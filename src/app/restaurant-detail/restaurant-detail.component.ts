@@ -26,7 +26,9 @@ export class RestaurantDetailComponent implements OnInit{
   favoriteRestaurant() {
       if (this.restaurant) {
         this.restaurant.favorite = !this.restaurant.favorite
-        this.restauranteService.saveRestaurant(this.restaurant)
+        this.restauranteService.favoriteRestaurant(this.restaurant).subscribe(
+          resp => console.log(resp)
+        )
       }
   }
 

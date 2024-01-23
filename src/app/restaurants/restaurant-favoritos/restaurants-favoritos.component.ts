@@ -25,9 +25,4 @@ export class RestaurantsFavoritosComponent implements OnInit {
     })
   }
 
-  favoritarRestaurant(restaurant: Restaurant) {
-    restaurant.favorite = true;
-    this.restaurantService.saveRestaurant(restaurant)
-  }
-
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {RadioOptionModel} from "../shared/radio/radio-option.model";
 import {OrderService} from "./order.service";
 import {CarItem} from "../restaurant-detail/shopping-cart/item-cart.model";
+import {Order, OrderItem} from "./order";
 
 @Component({
   selector: 'app-order',
@@ -39,6 +40,17 @@ export class OrderComponent {
 
   remove(item: CarItem) {
     this.orderService.remove(item);
+  }
+
+  checkOrder(order: Order) {
+    order.items = this.cartItems().map(
+      (item: CarItem) => new OrderItem(item.quantidade, item.itemCardapio.id))
+    this.orderService.checkOrder(order)
+      .subscribe((orderId: string) => {
+        console.log(`Compra concluída: ${orderId}`)
+        this.orderService.clear();
+    })
+    console.log(order)
   }
 
 }

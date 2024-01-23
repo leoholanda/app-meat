@@ -25,8 +25,8 @@
         </td>
         <td>{{ item.itemCardapio.name }}</td>
         <td>{{ item.itemCardapio.description }}</td>
-        <td>{{ item.itemCardapio.price | currency: 'BRL': true }}  x{{item.quantidade}}</td>
-        <td class="text-right">{{ item.value() | currency: 'BRL': true }}</td>
+        <td>{{ item.itemCardapio.price | currency: 'BRL' }}  x{{item.quantidade}}</td>
+        <td class="text-right">{{ item.value() | currency: 'BRL' }}</td>
         <td class="text-right">
           <a (click)="emitRemove(item)" class="btn btn-sm danger"><i class="fa fa-trash"></i></a>
         </td>
