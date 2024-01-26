@@ -1,11 +1,6 @@
-<section class="content-header">
-</section>
-
 <section class="content">
   <section class="invoice">
-
-    {{form.valid}}
-    {{form.value | json}}
+  <app-restaurant-order [restaurant]="restaurant"></app-restaurant-order>
 
     <form #form='ngForm' novalidate>
       <div class="row">
@@ -72,7 +67,7 @@
           <p class="lead">Total:</p>
 
           <app-delivery-costs
-            [delivery]="delivery"
+            [restaurant]="restaurant"
             [itemsValue]="itemsValue()"></app-delivery-costs>
         </div>
         <!-- /.col -->

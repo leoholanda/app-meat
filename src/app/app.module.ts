@@ -26,6 +26,8 @@ import { RadioComponent } from './shared/radio/radio.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component';
 import { RestaurantsFavoritosComponent } from './restaurants/restaurant-favoritos/restaurants-favoritos.component';
 import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { RestaurantOrderComponent } from './order/restaurant-order/restaurant-order.component';
 
 
 registerLocaleData(ptBR);
@@ -48,7 +50,9 @@ registerLocaleData(ptBR);
     RadioComponent,
     OrderItemsComponent,
     RestaurantsFavoritosComponent,
-    DeliveryCostsComponent
+    DeliveryCostsComponent,
+    OrderSummaryComponent,
+    RestaurantOrderComponent
   ],
   imports: [
     BrowserModule,

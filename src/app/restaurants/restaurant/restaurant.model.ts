@@ -6,6 +6,7 @@ export interface Restaurant {
   hours: string,
   rating: number,
   imagePath: string,
-  about: string
-  favorite: boolean
+  about: string,
+  favorite: boolean,
+  deliveryPrice: number
 }

@@ -1,5 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {ShoppingCartService} from "./shopping-cart.service";
+import {RestaurantsService} from "../../restaurants/restaurants.service";
+import {ActivatedRoute} from "@angular/router";
+import {Restaurant} from "../../restaurants/restaurant/restaurant.model";
+import {ItemCardapioModel} from "../item-cardapio/item-cardapio.model";
 
 @Component({
   selector: 'app-shopping-cart',
@@ -7,7 +11,11 @@ import {ShoppingCartService} from "./shopping-cart.service";
 })
 export class ShoppingCartComponent implements OnInit{
 
-  constructor(private shoppingCartService: ShoppingCartService) {
+  restaurant?: Restaurant;
+
+  constructor(private shoppingCartService: ShoppingCartService,
+              private restaurantsService: RestaurantsService,
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {

@@ -1,0 +1,18 @@
+    <div class="row">
+      <div class="col-xs-12">
+        <div>
+          <div class="box-header">
+            <a (click)="back()" title="Voltar"> <i class="back fa fa-chevron-left"></i></a>
+
+            <h1 class="box-title">{{restaurant?.name}}</h1>
+          </div>
+
+          <span class="place-info-box-icon"><img [src]="restaurant?.imagePath" /></span>
+          <div class="place-info-box-content">
+            <span class="place-info-box-detail">Taxa de Entrega: {{restaurant?.deliveryPrice | currency: 'BRL'}}</span>
+            <span class="place-info-box-detail">Entrega estimada: {{restaurant?.deliveryEstimate}}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>

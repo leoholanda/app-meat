@@ -6,6 +6,8 @@ import {Observable} from "rxjs";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 
 import {MEAT_API} from "../../app.api";
+import {Restaurant} from "../restaurants/restaurant/restaurant.model";
+import {RestaurantsService} from "../restaurants/restaurants.service";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +16,12 @@ export class OrderService {
 
   constructor(
     private cartService: ShoppingCartService,
+    private restaurantService: RestaurantsService,
     private http: HttpClient) {
+  }
+
+  findRestaurantByItemCardapio(idRestaurant: string): Observable<Restaurant> {
+    return this.restaurantService.findRestaurantById(idRestaurant);
   }
 
   cartItems(): CarItem[] {

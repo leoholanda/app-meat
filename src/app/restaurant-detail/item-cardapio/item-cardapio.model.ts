@@ -4,5 +4,5 @@ export interface ItemCardapioModel {
   description: string,
   price: number,
   imagePath: string,
-  deliveryPrice: number
+  restaurantId: string
 }

@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {Restaurant} from "../../restaurants/restaurant/restaurant.model";
 
 @Component({
   selector: 'app-delivery-costs',
@@ -7,14 +8,17 @@ import {Component, Input} from '@angular/core';
 })
 export class DeliveryCostsComponent {
 
-  @Input() delivery: number = 0
+  @Input() restaurant?: Restaurant;
   @Input() itemsValue: number = 0
 
   constructor() {
   }
 
   total(): number {
-    return this.delivery + this.itemsValue;
+    if(this.restaurant !== undefined) {
+      return this.restaurant?.deliveryPrice + this.itemsValue;
+    }
+    return 0;
   }
 
 }

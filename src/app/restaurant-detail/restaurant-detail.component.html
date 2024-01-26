@@ -23,12 +23,12 @@
           </div>
 
           <dl class="col-sm-9 col-xs-12">
-            <dt>Categoria</dt>
-            <dd>{{restaurant?.category}}</dd>
             <dt>Quem somos</dt>
             <dd>{{restaurant?.about}}</dd>
             <dt>Horários</dt>
             <dd>{{restaurant?.hours}}</dd>
+            <dt>Taxa de Entrega</dt>
+            <dd>{{restaurant?.deliveryPrice | currency: 'BRL'}}</dd>
             <dd><button *ngIf="!restaurant?.favorite" title="Favoritar"
                         (click)="favoriteRestaurant()" class="btn btn-danger">
               <i class="fa fa-heart-o"></i></button>
