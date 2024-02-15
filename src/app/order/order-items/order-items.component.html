@@ -25,7 +25,9 @@
         </td>
         <td>{{ item.itemCardapio.name }}</td>
         <td>{{ item.itemCardapio.description }}</td>
-        <td>{{ item.itemCardapio.price | currency: 'BRL' }}  x{{item.quantidade}}</td>
+        <td>{{ item.itemCardapio.price | currency: 'BRL' }}
+          <span class="text-blue" *ngIf="item.quantidade > 1">x{{item.quantidade}}</span>
+        </td>
         <td class="text-right">{{ item.value() | currency: 'BRL' }}</td>
         <td class="text-right">
           <a (click)="emitRemove(item)" class="btn btn-sm danger"><i class="fa fa-trash"></i></a>
