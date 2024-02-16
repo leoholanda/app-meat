@@ -28,6 +28,7 @@ import { RestaurantsFavoritosComponent } from './restaurants/restaurant-favorito
 import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { RestaurantOrderComponent } from './order/restaurant-order/restaurant-order.component';
+import { RatingComponent } from './shared/rating/rating.component';
 
 
 registerLocaleData(ptBR);
@@ -52,7 +53,8 @@ registerLocaleData(ptBR);
     RestaurantsFavoritosComponent,
     DeliveryCostsComponent,
     OrderSummaryComponent,
-    RestaurantOrderComponent
+    RestaurantOrderComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
