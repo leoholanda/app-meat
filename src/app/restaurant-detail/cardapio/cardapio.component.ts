@@ -3,7 +3,6 @@ import {RestaurantsService} from "../../restaurants/restaurants.service";
 import {ActivatedRoute} from "@angular/router";
 import {Observable} from "rxjs";
 import {ItemCardapioModel} from "../item-cardapio/item-cardapio.model";
-import {Restaurant} from "../../restaurants/restaurant/restaurant.model";
 
 @Component({
   selector: 'app-cardapio',

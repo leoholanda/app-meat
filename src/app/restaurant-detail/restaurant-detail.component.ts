@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {RestaurantsService} from "../restaurants/restaurants.service";
 import {Restaurant} from "../restaurants/restaurant/restaurant.model";
-import {ActivatedRoute} from "@angular/router";
-import {Location} from "@angular/common";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-restaurant-detail',
@@ -15,7 +14,7 @@ export class RestaurantDetailComponent implements OnInit{
 
   constructor(private restauranteService: RestaurantsService,
               private route: ActivatedRoute,
-              private location: Location) {
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -32,8 +31,8 @@ export class RestaurantDetailComponent implements OnInit{
       }
   }
 
-  back() {
-    this.location.back();
+  backRestaurants() {
+    this.router.navigate(['/restaurants']);
   }
 
 }
