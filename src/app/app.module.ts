@@ -18,7 +18,7 @@ import { ItemCardapioComponent } from './restaurant-detail/item-cardapio/item-ca
 import { AvaliacoesComponent } from './restaurant-detail/avaliacoes/avaliacoes.component';
 
 import ptBR from '@angular/common/locales/pt'
-import {registerLocaleData} from "@angular/common";
+import {NgOptimizedImage, registerLocaleData} from "@angular/common";
 import { OrderComponent } from './order/order.component';
 import {FormsModule} from "@angular/forms";
 import { InputComponent } from './shared/input/input.component';
@@ -60,7 +60,8 @@ registerLocaleData(ptBR);
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgOptimizedImage
   ],
   providers: [RestaurantsService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]

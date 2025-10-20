@@ -14,8 +14,19 @@ export class RestaurantsComponent implements OnInit {
   }
 
   ngOnInit() {
+
     this.restaurantsService.findByRestaurants()
-      .subscribe(restaurants => this.restaurants = restaurants);
+      .subscribe(restaurants => {
+        this.restaurants = restaurants
+          .sort((a,b) => {
+
+            if (a.favorite && !b.favorite) return -1;
+            if (!a.favorite && b.favorite) return 1;
+
+            return a.name.localeCompare(b.name);
+
+          })});
+
   }
 
 }

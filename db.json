@@ -7,8 +7,8 @@
       "deliveryEstimate": "25m",
       "rating": 4.9,
       "imagePath": "assets/img/restaurants/breadbakery.png",
-      "about": "A Bread & Brakery tem 40 anos de mercado. Fazemos os melhores doces e pães. Compre e confira.",
-      "hours": "Funciona de segunda à sexta, de 8h às 23h",
+      "about": "A Bread & Bakery tem 40 anos de mercado. Fazemos os melhores doces e pães. Compre e confira.",
+      "hours": "Segunda à sexta, 8h às 23h",
       "favorite": false,
       "deliveryPrice": 8
     },
@@ -20,8 +20,8 @@
       "rating": 3.5,
       "imagePath": "assets/img/restaurants/burgerhouse.png",
       "about": "40 anos se especializando em trash food.",
-      "hours": "Funciona todos os dias, de 10h às 22h",
-      "favorite": true,
+      "hours": "Todos os dias, 10h às 22h",
+      "favorite": false,
       "deliveryPrice": 10
     },
     {
@@ -32,8 +32,8 @@
       "rating": 4.8,
       "imagePath": "assets/img/restaurants/coffeecorner.png",
       "about": "A Coffe Corner foi eleita a melhor cafeteria da cidade.",
-      "hours": "Funciona de segunda à sábado, de 6h às 22h",
-      "favorite": true,
+      "hours": "Segunda à sábado, 6h às 22h",
+      "favorite": false,
       "deliveryPrice": 7
     },
     {
@@ -43,8 +43,8 @@
       "deliveryEstimate": "75m",
       "rating": 4.1,
       "imagePath": "assets/img/restaurants/greenfood.png",
-      "about": "Comida saudável é no Green Food. Compramos barato, vendemos caro. ;)",
-      "hours": "Somente em horário de almoço, das 11h às 15h",
+      "about": "Comida saudável e saborosa para o dia a dia.",
+      "hours": "Segunda à sexta, 11h às 15h",
       "favorite": false,
       "deliveryPrice": 14
     },
@@ -56,7 +56,7 @@
       "rating": 4.5,
       "imagePath": "assets/img/restaurants/icy.png",
       "about": "A Ice Cream é uma sorveteria inovadora.",
-      "hours": "Funciona todos os dias, de 10h às 1h",
+      "hours": "Todos os dias, 10h às 1h",
       "favorite": false,
       "deliveryPrice": 8
     },
@@ -67,9 +67,249 @@
       "deliveryEstimate": "20m",
       "rating": 4.4,
       "imagePath": "assets/img/restaurants/tasty.png",
-      "about": "A doceria com mais tradição da cidade",
-      "hours": "Funciona de segunda à sábado, de 8h às 23h",
+      "about": "A doceria com mais tradição da cidade.",
+      "hours": "Segunda à sábado, 8h às 23h",
+      "favorite": false,
+      "deliveryPrice": 10
+    },
+    {
+      "id": "bakery",
+      "name": "Bakery",
+      "category": "Bakery",
+      "deliveryEstimate": "30m",
+      "rating": 4.2,
+      "imagePath": "assets/img/restaurants/bakery.png",
+      "about": "Pães frescos e doces todas as manhãs.",
+      "hours": "Segunda à sábado, 7h às 21h",
+      "favorite": false,
+      "deliveryPrice": 6
+    },
+    {
+      "id": "breadshop",
+      "name": "Breadshop",
+      "category": "Bakery",
+      "deliveryEstimate": "20m",
+      "rating": 4.6,
+      "imagePath": "assets/img/restaurants/breadshop.png",
+      "about": "Especialistas em pães artesanais e bolos caseiros.",
+      "hours": "Todos os dias, 7h às 22h",
+      "favorite": false,
+      "deliveryPrice": 7
+    },
+    {
+      "id": "patseere",
+      "name": "Patseere",
+      "category": "Doces",
+      "deliveryEstimate": "25m",
+      "rating": 4.3,
+      "imagePath": "assets/img/restaurants/patseere.png",
+      "about": "Doces franceses e sobremesas exclusivas.",
+      "hours": "Segunda à sábado, 9h às 22h",
+      "favorite": false,
+      "deliveryPrice": 9
+    },
+    {
+      "id": "cakesbakery",
+      "name": "Cakes Bakery",
+      "category": "Doces",
+      "deliveryEstimate": "30m",
+      "rating": 4.7,
+      "imagePath": "assets/img/restaurants/cakesbakery.png",
+      "about": "Os melhores bolos e tortas da região.",
+      "hours": "Todos os dias, 8h às 22h",
+      "favorite": false,
+      "deliveryPrice": 8
+    },
+    {
+      "id": "cake",
+      "name": "Cake",
+      "category": "Doces",
+      "deliveryEstimate": "35m",
+      "rating": 4.5,
+      "imagePath": "assets/img/restaurants/cake.png",
+      "about": "Delícias doces que derretem na boca.",
+      "hours": "Segunda à sábado, 10h às 22h",
+      "favorite": false,
+      "deliveryPrice": 10
+    },
+    {
+      "id": "queen-cakes",
+      "name": "Queen Cakes",
+      "category": "Doces",
+      "deliveryEstimate": "20m",
+      "rating": 4.9,
+      "imagePath": "assets/img/restaurants/queencakes.png",
+      "about": "Bolos finos e sobremesas dignas da realeza.",
+      "hours": "Segunda à sábado, 9h às 23h",
+      "favorite": false,
+      "deliveryPrice": 12
+    },
+    {
+      "id": "royal-cakes",
+      "name": "Royal Cakes",
+      "category": "Doces",
+      "deliveryEstimate": "22m",
+      "rating": 4.8,
+      "imagePath": "assets/img/restaurants/royalcakes.png",
+      "about": "Tradição em bolos desde 1980.",
+      "hours": "Todos os dias, 9h às 21h",
+      "favorite": false,
+      "deliveryPrice": 9
+    },
+    {
+      "id": "cake-house",
+      "name": "Cake House",
+      "category": "Doces",
+      "deliveryEstimate": "18m",
+      "rating": 4.4,
+      "imagePath": "assets/img/restaurants/cakehouse.png",
+      "about": "Confeitaria artesanal com receitas clássicas.",
+      "hours": "Segunda à domingo, 8h às 22h",
+      "favorite": false,
+      "deliveryPrice": 8
+    },
+    {
+      "id": "sweetcake",
+      "name": "Sweetcake",
+      "category": "Doces",
+      "deliveryEstimate": "25m",
+      "rating": 4.3,
+      "imagePath": "assets/img/restaurants/sweetcake.png",
+      "about": "Doces feitos com amor e ingredientes selecionados.",
+      "hours": "Segunda à sábado, 8h às 23h",
       "favorite": true,
+      "deliveryPrice": 7
+    },
+    {
+      "id": "bestpizza",
+      "name": "Best Pizza",
+      "category": "Pizzaria",
+      "deliveryEstimate": "40m",
+      "rating": 4.7,
+      "imagePath": "assets/img/restaurants/bestpizza.png",
+      "about": "As pizzas mais saborosas com massa artesanal.",
+      "hours": "Todos os dias, 18h às 0h",
+      "favorite": false,
+      "deliveryPrice": 10
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "category": "Pizzaria",
+      "deliveryEstimate": "35m",
+      "rating": 4.4,
+      "imagePath": "assets/img/restaurants/pizza.png",
+      "about": "Pizzas com bordas recheadas e ingredientes frescos.",
+      "hours": "Todos os dias, 17h às 23h",
+      "favorite": true,
+      "deliveryPrice": 11
+    },
+    {
+      "id": "pizza-hot",
+      "name": "Pizza Hot",
+      "category": "Pizzaria",
+      "deliveryEstimate": "30m",
+      "rating": 4.6,
+      "imagePath": "assets/img/restaurants/pizzahot.png",
+      "about": "Pizza crocante e quentinha direto do forno.",
+      "hours": "Segunda à domingo, 17h às 23h",
+      "favorite": false,
+      "deliveryPrice": 9
+    },
+    {
+      "id": "pizzeria",
+      "name": "Pizzeria",
+      "category": "Pizzaria",
+      "deliveryEstimate": "28m",
+      "rating": 4.2,
+      "imagePath": "assets/img/restaurants/pizzeria.png",
+      "about": "Pizzas tradicionais e calzones irresistíveis.",
+      "hours": "Segunda à sábado, 18h às 0h",
+      "favorite": false,
+      "deliveryPrice": 8
+    },
+    {
+      "id": "frash-tasty",
+      "name": "Frash Tasty",
+      "category": "Ice Creams",
+      "deliveryEstimate": "20m",
+      "rating": 4.5,
+      "imagePath": "assets/img/restaurants/frashtasty.png",
+      "about": "Sorvetes naturais e refrescantes.",
+      "hours": "Todos os dias, 12h às 23h",
+      "favorite": false,
+      "deliveryPrice": 6
+    },
+    {
+      "id": "homemade",
+      "name": "Homemade Ice",
+      "category": "Ice Creams",
+      "deliveryEstimate": "25m",
+      "rating": 4.8,
+      "imagePath": "assets/img/restaurants/homemade.png",
+      "about": "Sorvetes caseiros e sobremesas geladas.",
+      "hours": "Segunda à domingo, 10h às 23h",
+      "favorite": false,
+      "deliveryPrice": 8
+    },
+    {
+      "id": "gelado",
+      "name": "Gelado",
+      "category": "Ice Creams",
+      "deliveryEstimate": "30m",
+      "rating": 4.6,
+      "imagePath": "assets/img/restaurants/gelado.png",
+      "about": "Gelatos italianos e milkshakes incríveis.",
+      "hours": "Segunda à sábado, 11h às 22h",
+      "favorite": false,
+      "deliveryPrice": 7
+    },
+    {
+      "id": "gelato",
+      "name": "Gelato",
+      "category": "Ice Creams",
+      "deliveryEstimate": "25m",
+      "rating": 4.9,
+      "imagePath": "assets/img/restaurants/gelato.png",
+      "about": "Gelateria com sabores artesanais e únicos.",
+      "hours": "Todos os dias, 12h às 23h",
+      "favorite": false,
+      "deliveryPrice": 10
+    },
+    {
+      "id": "icecream",
+      "name": "Icecream",
+      "category": "Ice Creams",
+      "deliveryEstimate": "22m",
+      "rating": 4.4,
+      "imagePath": "assets/img/restaurants/icecream.png",
+      "about": "Sorvetes para todas as idades.",
+      "hours": "Segunda à sábado, 11h às 22h",
+      "favorite": false,
+      "deliveryPrice": 9
+    },
+    {
+      "id": "healthyfresh",
+      "name": "Healthy Fresh",
+      "category": "Ice Creams",
+      "deliveryEstimate": "18m",
+      "rating": 4.3,
+      "imagePath": "assets/img/restaurants/healthyfresh.png",
+      "about": "Sorvetes veganos e naturais.",
+      "hours": "Todos os dias, 10h às 22h",
+      "favorite": false,
+      "deliveryPrice": 8
+    },
+    {
+      "id": "borcele",
+      "name": "Borcele",
+      "category": "Ice Creams",
+      "deliveryEstimate": "20m",
+      "rating": 4.7,
+      "imagePath": "assets/img/restaurants/borcele.png",
+      "about": "Sabores exóticos e sorvetes premium.",
+      "hours": "Segunda à domingo, 11h às 23h",
+      "favorite": false,
       "deliveryPrice": 10
     }
   ],
@@ -78,7 +318,7 @@
       "id": "cup-cake",
       "imagePath": "assets/img/foods/cupcake.png",
       "name": "Cup Cake",
-      "description": "Cup Cake recheado de Doce de Leite",
+      "description": "Cup Cake recheado de doce de leite artesanal",
       "price": 8.7,
       "restaurantId": "bread-bakery"
     },
@@ -86,7 +326,7 @@
       "id": "donut",
       "imagePath": "assets/img/foods/donut.png",
       "name": "Donut",
-      "description": "Coberto com chantilly",
+      "description": "Coberto com chantilly e granulado",
       "price": 2.5,
       "restaurantId": "bread-bakery"
     },
@@ -94,7 +334,7 @@
       "id": "bread",
       "imagePath": "assets/img/foods/bread.png",
       "name": "Pão Artesanal Italiano",
-      "description": "Pão artesanal com queijos italianos",
+      "description": "Feito com fermentação natural e queijo parmesão",
       "price": 15.9,
       "restaurantId": "bread-bakery"
     },
@@ -102,7 +342,7 @@
       "id": "burger",
       "imagePath": "assets/img/foods/burger.png",
       "name": "Classic Burger",
-      "description": "O clássico. Não tem como errar.",
+      "description": "O clássico hambúrguer artesanal com queijo e bacon",
       "price": 18.5,
       "restaurantId": "burger-house"
     },
@@ -110,15 +350,15 @@
       "id": "fries",
       "imagePath": "assets/img/foods/fries.png",
       "name": "Batatas Fritas",
-      "description": "Batatas fritas crocantes",
+      "description": "Batatas crocantes com sal grosso e alecrim",
       "price": 5.5,
       "restaurantId": "burger-house"
     },
     {
-      "id": "coke.png",
+      "id": "coke",
       "imagePath": "assets/img/foods/coke.png",
       "name": "Refrigerante",
-      "description": "O refri mais gelado da cidade.",
+      "description": "Refri gelado 350ml",
       "price": 4.5,
       "restaurantId": "burger-house"
     },
@@ -126,15 +366,15 @@
       "id": "capp",
       "imagePath": "assets/img/foods/capp.png",
       "name": "Cappuccino com Chantilly",
-      "description": "Tradicional cappuccino com chantilly",
+      "description": "Tradicional cappuccino italiano",
       "price": 9.9,
       "restaurantId": "coffee-corner"
     },
     {
       "id": "espreso",
       "imagePath": "assets/img/foods/espreso.png",
-      "name": "Super Espreso",
-      "description": "Café espresso duplo. ",
+      "name": "Super Espresso",
+      "description": "Café espresso duplo encorpado",
       "price": 12.5,
       "restaurantId": "coffee-corner"
     },
@@ -142,7 +382,7 @@
       "id": "starb",
       "imagePath": "assets/img/foods/starb.png",
       "name": "Starbucks Copycat",
-      "description": "O mais pedido da casa. O verdadeiro café americano pura água.",
+      "description": "Blend de café americano com baunilha",
       "price": 15.6,
       "restaurantId": "coffee-corner"
     },
@@ -150,7 +390,7 @@
       "id": "zlasagna",
       "imagePath": "assets/img/foods/zlasagna.png",
       "name": "Lasagna de Zucchini",
-      "description": "Lasagna deliciosa que se salva por causa do queijo",
+      "description": "Lasagna leve e deliciosa com queijo fresco",
       "price": 14.9,
       "restaurantId": "green-food"
     },
@@ -158,15 +398,15 @@
       "id": "greensandwich",
       "imagePath": "assets/img/foods/greensandwich.png",
       "name": "Sanduíche de Frango",
-      "description": "Frango grelhado e salada",
+      "description": "Frango grelhado e salada crocante",
       "price": 10.5,
       "restaurantId": "green-food"
     },
     {
       "id": "ceasar",
       "imagePath": "assets/img/foods/ceasar.png",
-      "name": "Salada Ceasar",
-      "description": "Clássica salada ceasar.",
+      "name": "Salada Caesar",
+      "description": "Clássica salada com molho caseiro",
       "price": 33.9,
       "restaurantId": "green-food"
     },
@@ -174,7 +414,7 @@
       "id": "sunday",
       "imagePath": "assets/img/foods/sunday.png",
       "name": "Mega Sunday",
-      "description": "Sunday com várias bolas de sorvete a sua escolha",
+      "description": "Várias bolas de sorvete e calda de chocolate",
       "price": 21.5,
       "restaurantId": "ice-cream"
     },
@@ -182,15 +422,15 @@
       "id": "chocpop",
       "imagePath": "assets/img/foods/chocpop.png",
       "name": "Picolé de Brigadeiro",
-      "description": "Picolé de brigadeiro recheado com côco.",
+      "description": "Recheado com creme de coco",
       "price": 8.5,
       "restaurantId": "ice-cream"
     },
     {
-      "id": "icestd.png",
+      "id": "icestd",
       "imagePath": "assets/img/foods/icestd.png",
       "name": "Sorvete Simples",
-      "description": "Clássico sorvete de rua onde todos os sabores são idênticos.",
+      "description": "Casquinha tradicional de baunilha",
       "price": 1.5,
       "restaurantId": "ice-cream"
     },
@@ -198,7 +438,7 @@
       "id": "cup",
       "imagePath": "assets/img/foods/cup.png",
       "name": "Cup Cake de Choc. Branco",
-      "description": "Cup Cake de chocolate branco",
+      "description": "Macio e recheado com chocolate branco",
       "price": 5.5,
       "restaurantId": "tasty-treats"
     },
@@ -206,7 +446,7 @@
       "id": "straw",
       "imagePath": "assets/img/foods/straw.png",
       "name": "Bolo de Morango",
-      "description": "Bolo recheado e coberto com morangos",
+      "description": "Recheado e coberto com morangos frescos",
       "price": 40.5,
       "restaurantId": "tasty-treats"
     },
@@ -214,201 +454,382 @@
       "id": "cake",
       "imagePath": "assets/img/foods/cake.png",
       "name": "Fatia de Bolo",
-      "description": "Fatia de bolo de morango",
+      "description": "Fatia de bolo de chocolate com calda",
       "price": 5.9,
       "restaurantId": "tasty-treats"
+    },
+    {
+      "id": "croissant",
+      "imagePath": "assets/img/foods/croissant.png",
+      "name": "Croissant Manteiga",
+      "description": "Croissant francês folhado na hora",
+      "price": 6,
+      "restaurantId": "bakery"
+    },
+    {
+      "id": "pao-mel",
+      "imagePath": "assets/img/foods/paomel.png",
+      "name": "Pão de Mel",
+      "description": "Com cobertura de chocolate meio amargo",
+      "price": 4.5,
+      "restaurantId": "bakery"
+    },
+    {
+      "id": "pao-queijo",
+      "imagePath": "assets/img/foods/paoqueijo.png",
+      "name": "Pão de Queijo Mineiro",
+      "description": "Tradicional e irresistível",
+      "price": 2.5,
+      "restaurantId": "breadshop"
+    },
+    {
+      "id": "torta-maca",
+      "imagePath": "assets/img/foods/torta.png",
+      "name": "Torta de Maçã",
+      "description": "Com canela e massa amanteigada",
+      "price": 12.5,
+      "restaurantId": "breadshop"
+    },
+    {
+      "id": "eclair",
+      "imagePath": "assets/img/foods/eclair.png",
+      "name": "Eclair de Chocolate",
+      "description": "Clássico francês com ganache escuro",
+      "price": 9.5,
+      "restaurantId": "patseere"
+    },
+    {
+      "id": "tartelette",
+      "imagePath": "assets/img/foods/tartelette.png",
+      "name": "Tartelette de Frutas Vermelhas",
+      "description": "Tarte de morango e framboesa",
+      "price": 11.9,
+      "restaurantId": "patseere"
+    },
+    {
+      "id": "bolo-choc",
+      "imagePath": "assets/img/foods/bolo.png",
+      "name": "Bolo de Chocolate",
+      "description": "Com calda quente e raspas de chocolate",
+      "price": 22.5,
+      "restaurantId": "cakesbakery"
+    },
+    {
+      "id": "torta-limao",
+      "imagePath": "assets/img/foods/tortalimao.png",
+      "name": "Torta de Limão",
+      "description": "Recheio suave com cobertura de merengue",
+      "price": 16.5,
+      "restaurantId": "cakesbakery"
+    },
+    {
+      "id": "brownie",
+      "imagePath": "assets/img/foods/brownie.png",
+      "name": "Brownie",
+      "description": "Com nozes e calda de chocolate",
+      "price": 9,
+      "restaurantId": "queen-cakes"
+    },
+    {
+      "id": "pudim",
+      "imagePath": "assets/img/foods/pudim.png",
+      "name": "Pudim de Leite",
+      "description": "Clássico com calda caramelizada",
+      "price": 7.5,
+      "restaurantId": "royal-cakes"
+    },
+    {
+      "id": "mousse",
+      "imagePath": "assets/img/foods/mousse.png",
+      "name": "Mousse de Maracujá",
+      "description": "Doce tropical e refrescante",
+      "price": 8.5,
+      "restaurantId": "cake-house"
+    },
+    {
+      "id": "brigadeiro",
+      "imagePath": "assets/img/foods/brigadeiro.png",
+      "name": "Brigadeiro Gourmet",
+      "description": "Brigadeiro com chocolate belga",
+      "price": 3.5,
+      "restaurantId": "sweetcake"
+    },
+    {
+      "id": "margherita",
+      "imagePath": "assets/img/foods/margherita.png",
+      "name": "Pizza Margherita",
+      "description": "Clássica com molho de tomate e manjericão",
+      "price": 39.9,
+      "restaurantId": "bestpizza"
+    },
+    {
+      "id": "calabresa",
+      "imagePath": "assets/img/foods/calabresa.png",
+      "name": "Pizza Calabresa",
+      "description": "Com cebola e queijo mussarela",
+      "price": 42,
+      "restaurantId": "pizza"
+    },
+    {
+      "id": "portuguesa",
+      "imagePath": "assets/img/foods/portuguesa.png",
+      "name": "Pizza Portuguesa",
+      "description": "Presunto, ovos e azeitonas",
+      "price": 45,
+      "restaurantId": "pizza-hot"
+    },
+    {
+      "id": "pepperoni",
+      "imagePath": "assets/img/foods/pepperoni.png",
+      "name": "Pizza Pepperoni",
+      "description": "Molho artesanal e fatias crocantes",
+      "price": 46.9,
+      "restaurantId": "pizzeria"
+    },
+    {
+      "id": "gelato-choco",
+      "imagePath": "assets/img/foods/gelatochoco.png",
+      "name": "Gelato de Chocolate",
+      "description": "Gelado e intenso com cacau 70%",
+      "price": 9.9,
+      "restaurantId": "gelato"
+    },
+    {
+      "id": "gelato-morango",
+      "imagePath": "assets/img/foods/gelatomorango.png",
+      "name": "Gelato de Morango",
+      "description": "Com frutas frescas",
+      "price": 8.5,
+      "restaurantId": "gelado"
+    },
+    {
+      "id": "milkshake",
+      "imagePath": "assets/img/foods/milkshake.png",
+      "name": "Milkshake",
+      "description": "Chocolate, baunilha ou morango",
+      "price": 12.9,
+      "restaurantId": "frash-tasty"
+    },
+    {
+      "id": "acai",
+      "imagePath": "assets/img/foods/acai.png",
+      "name": "Açaí Tradicional",
+      "description": "Com granola e banana",
+      "price": 14.9,
+      "restaurantId": "healthyfresh"
+    },
+    {
+      "id": "banana-split",
+      "imagePath": "assets/img/foods/banana.png",
+      "name": "Banana Split",
+      "description": "Com três bolas e calda de caramelo",
+      "price": 15.5,
+      "restaurantId": "borcele"
     }
   ],
   "reviews": [
     {
       "name": "Julia",
-      "date": "2017-01-23T18:25:43",
+      "date": "2025-01-23T18:25:43",
       "rating": 4.5,
-      "comments": "Tudo muito bom, entrega no tempo certo",
+      "comments": "Tudo muito bom, entrega no tempo certo!",
       "restaurantId": "bread-bakery",
-      "id": "77b9"
+      "id": "r001"
     },
     {
       "name": "Aline",
-      "date": "2016-12-12T18:25:43",
+      "date": "2025-01-10T18:25:43",
       "rating": 3,
-      "comments": "NÃO recomendo. O recheio é só um creme, não tem camarão e nem carne",
+      "comments": "Poderia ter mais recheio, mas estava saboroso.",
       "restaurantId": "bread-bakery",
-      "id": "0c01"
-    },
-    {
-      "name": "Renata",
-      "date": "2016-12-12T18:25:43",
-      "rating": 2,
-      "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
-      "restaurantId": "bread-bakery",
-      "id": "2d13"
-    },
-    {
-      "name": "Renata",
-      "date": "2016-12-12T18:25:43",
-      "rating": 5,
-      "comments": "Nunca deixou na mão, comida sempre deliciosa.",
-      "restaurantId": "bread-bakery",
-      "id": "0f5f"
+      "id": "r002"
     },
     {
       "name": "Daniela",
-      "date": "2017-01-23T18:25:43",
+      "date": "2025-01-28T18:25:43",
       "rating": 4,
-      "comments": "Sanduíche muito bom! Já pedi diversas vezes sempre bom!",
+      "comments": "Sanduíche muito bom! Sempre peço e nunca decepciona.",
       "restaurantId": "burger-house",
-      "id": "2f15"
+      "id": "r003"
     },
     {
       "name": "Laila",
-      "date": "2017-02-02T18:25:43",
+      "date": "2025-02-02T18:25:43",
       "rating": 5,
-      "comments": "Melhor hambúrguer que já provei. Vai ser difícil voltar para mc e bk",
+      "comments": "Melhor hambúrguer que já comi! Pão e carne perfeitos.",
       "restaurantId": "burger-house",
-      "id": "922e"
-    },
-    {
-      "name": "Suzana",
-      "date": "2016-12-12T18:25:43",
-      "rating": 3.5,
-      "comments": "Meu sanduíche chegou frio e todo desmontado =\\",
-      "restaurantId": "burger-house",
-      "id": "dcc7"
+      "id": "r004"
     },
     {
       "name": "Eric",
-      "date": "2017-01-23T18:25:43",
+      "date": "2025-01-23T18:25:43",
       "rating": 4.5,
-      "comments": "Excelente opção! Recomendo!",
+      "comments": "Excelente opção! Café no ponto certo e atendimento ótimo.",
       "restaurantId": "coffee-corner",
-      "id": "0bba"
+      "id": "r005"
     },
     {
       "name": "Amanda",
-      "date": "2017-02-02T18:25:43",
+      "date": "2025-02-02T18:25:43",
       "rating": 2.5,
-      "comments": "Demorou muito e o café veio gelado",
+      "comments": "Demorou um pouco e o café chegou morno, mas o sabor é ótimo.",
       "restaurantId": "coffee-corner",
-      "id": "b148"
-    },
-    {
-      "name": "Carla",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4.8,
-      "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
-      "restaurantId": "coffee-corner",
-      "id": "2f31"
-    },
-    {
-      "name": "Rodrigo",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4,
-      "comments": "Muito rápida a entrega, mas é caro.",
-      "restaurantId": "coffee-corner",
-      "id": "b56b"
-    },
-    {
-      "name": "André",
-      "date": "2016-12-12T18:25:43",
-      "rating": 4.5,
-      "comments": "Excelente como sempre!",
-      "restaurantId": "coffee-corner",
-      "id": "a4ee"
-    },
-    {
-      "name": "João",
-      "date": "2017-01-23T18:25:43",
-      "rating": 5,
-      "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
-      "restaurantId": "green-food",
-      "id": "3414"
+      "id": "r006"
     },
     {
       "name": "Marcelo",
-      "date": "2017-02-02T18:25:43",
+      "date": "2025-02-12T18:25:43",
       "rating": 4.5,
-      "comments": "Chegou muito rápido, antes mesmo da previsão",
+      "comments": "Chegou antes do tempo estimado. Excelente!",
       "restaurantId": "green-food",
-      "id": "52cb"
+      "id": "r007"
     },
     {
       "name": "Fatinha",
-      "date": "2017-01-23T18:25:43",
+      "date": "2025-01-29T18:25:43",
       "rating": 2,
-      "comments": "Ñ gostei dos sabores q pedi e achei o preço muito elevado",
+      "comments": "Os sabores não me agradaram e o preço é alto.",
       "restaurantId": "ice-cream",
-      "id": "0502"
-    },
-    {
-      "name": "Lucas",
-      "date": "2017-02-02T18:25:43",
-      "rating": 2.5,
-      "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
-      "restaurantId": "ice-cream",
-      "id": "7598"
-    },
-    {
-      "name": "Jacira",
-      "date": "2017-02-01T18:25:43",
-      "rating": 4.5,
-      "comments": "Veio OK!",
-      "restaurantId": "ice-cream",
-      "id": "2814"
+      "id": "r008"
     },
     {
       "name": "Ana",
-      "date": "2017-01-23T18:25:43",
+      "date": "2025-01-23T18:25:43",
       "rating": 5,
-      "comments": "Rápido e sempre uma delicia!! Ja pedi 3x e sempre veio rapido e tudo certinho.",
+      "comments": "Tudo perfeito! Rápido e delicioso, recomendo muito.",
       "restaurantId": "tasty-treats",
-      "id": "6404"
-    },
-    {
-      "name": "Larissa",
-      "date": "2017-02-02T18:25:43",
-      "rating": 2.5,
-      "comments": "A taxa de entrega poderia ser mais barata.",
-      "restaurantId": "tasty-treats",
-      "id": "34c9"
-    },
-    {
-      "name": "Jarbas",
-      "date": "2016-12-15T18:25:43",
-      "rating": 4.7,
-      "comments": "Excelente e chegou muito rápido!",
-      "restaurantId": "tasty-treats",
-      "id": "f621"
+      "id": "r009"
     },
     {
       "name": "Rafaela",
-      "date": "2017-01-12T18:25:43",
-      "rating": 5,
-      "comments": "Chegou rápido e perfeito!",
+      "date": "2025-02-12T18:25:43",
+      "rating": 4.9,
+      "comments": "Chegou rápido e impecável. Bolo maravilhoso!",
       "restaurantId": "tasty-treats",
-      "id": "150b"
+      "id": "r010"
     },
     {
-      "name": "Julia",
-      "date": "2016-12-12T18:25:43",
-      "rating": 1.5,
-      "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
-      "restaurantId": "tasty-treats",
-      "id": "8216"
+      "name": "Cecilia",
+      "date": "2025-02-10T18:25:43",
+      "rating": 4.7,
+      "comments": "Croissant quentinho e saboroso! Pão de mel top.",
+      "restaurantId": "bakery",
+      "id": "r011"
     },
     {
-      "name": "Marília",
-      "date": "2016-12-20T18:25:43",
+      "name": "Fernando",
+      "date": "2025-02-09T18:25:43",
+      "rating": 4.2,
+      "comments": "Pães sempre frescos, mas o café poderia ser mais forte.",
+      "restaurantId": "breadshop",
+      "id": "r012"
+    },
+    {
+      "name": "Nathalia",
+      "date": "2025-02-08T18:25:43",
+      "rating": 4.9,
+      "comments": "A melhor torta de frutas que já comi!",
+      "restaurantId": "patseere",
+      "id": "r013"
+    },
+    {
+      "name": "Jonas",
+      "date": "2025-01-25T18:25:43",
       "rating": 4.5,
-      "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
-      "restaurantId": "tasty-treats",
-      "id": "7447"
+      "comments": "Bolos deliciosos e atendimento muito simpático.",
+      "restaurantId": "cakesbakery",
+      "id": "r014"
+    },
+    {
+      "name": "Letícia",
+      "date": "2025-02-15T18:25:43",
+      "rating": 4.3,
+      "comments": "Adorei o pudim da Royal Cakes, doce na medida.",
+      "restaurantId": "royal-cakes",
+      "id": "r015"
+    },
+    {
+      "name": "Tiago",
+      "date": "2025-02-10T18:25:43",
+      "rating": 4.9,
+      "comments": "Queen Cakes é incrível, bolo leve e saboroso!",
+      "restaurantId": "queen-cakes",
+      "id": "r016"
+    },
+    {
+      "name": "Bia",
+      "date": "2025-02-11T18:25:43",
+      "rating": 4.8,
+      "comments": "Sweetcake nunca erra, brigadeiro dos deuses.",
+      "restaurantId": "sweetcake",
+      "id": "r017"
+    },
+    {
+      "name": "André",
+      "date": "2025-02-12T18:25:43",
+      "rating": 4.1,
+      "comments": "Cake House é ótimo pra sobremesas rápidas.",
+      "restaurantId": "cake-house",
+      "id": "r018"
+    },
+    {
+      "name": "Marcos",
+      "date": "2025-02-14T18:25:43",
+      "rating": 4.7,
+      "comments": "A massa da Best Pizza é surreal!",
+      "restaurantId": "bestpizza",
+      "id": "r019"
+    },
+    {
+      "name": "Beatriz",
+      "date": "2025-02-10T18:25:43",
+      "rating": 4.5,
+      "comments": "Pizza Hot é viciante, borda recheada perfeita!",
+      "restaurantId": "pizza-hot",
+      "id": "r020"
+    },
+    {
+      "name": "Lucas",
+      "date": "2025-02-16T18:25:43",
+      "rating": 4.4,
+      "comments": "Pizzeria tem ótimo custo-benefício.",
+      "restaurantId": "pizzeria",
+      "id": "r021"
+    },
+    {
+      "name": "Julio",
+      "date": "2025-02-13T18:25:43",
+      "rating": 4.9,
+      "comments": "Gelato é a melhor gelateria da cidade!",
+      "restaurantId": "gelato",
+      "id": "r022"
+    },
+    {
+      "name": "Catarina",
+      "date": "2025-02-15T18:25:43",
+      "rating": 4.3,
+      "comments": "Frash Tasty tem milkshake incrível e barato.",
+      "restaurantId": "frash-tasty",
+      "id": "r023"
+    },
+    {
+      "name": "Samuel",
+      "date": "2025-02-12T18:25:43",
+      "rating": 4.6,
+      "comments": "Healthy Fresh surpreendeu com sorvete vegano!",
+      "restaurantId": "healthyfresh",
+      "id": "r024"
+    },
+    {
+      "name": "Viviane",
+      "date": "2025-02-14T18:25:43",
+      "rating": 4.8,
+      "comments": "Borcele é puro luxo! Sorvetes premium maravilhosos.",
+      "restaurantId": "borcele",
+      "id": "r025"
     }
   ],
   "orders": [
-    {
-      "id": "1"
-    },
     {
       "address": "Rua Por do Sol",
       "number": "154",
@@ -421,94 +842,95 @@
         },
         {
           "quantity": 1,
-          "menuId": "espreso"
-        },
-        {
-          "quantity": 1,
           "menuId": "starb"
         }
       ],
-      "id": "2"
+      "id": "ord001"
     },
     {
       "address": "Rua XPTO",
       "number": "100",
       "optionalAddress": "",
-      "paymentOption": "MON",
-      "items": [
-        {
-          "quantity": 3,
-          "menuId": "zlasagna"
-        },
-        {
-          "quantity": 2,
-          "menuId": "greensandwich"
-        }
-      ],
-      "id": "3"
-    },
-    {
-      "address": "Rua Marte",
-      "number": "290",
-      "optionalAddress": "AP 105",
-      "paymentOption": "CRE",
-      "items": [
-        {
-          "quantity": 3,
-          "menuId": "zlasagna"
-        },
-        {
-          "quantity": 3,
-          "menuId": "greensandwich"
-        },
-        {
-          "quantity": 1,
-          "menuId": "ceasar"
-        }
-      ],
-      "id": "4"
-    },
-    {
-      "address": "Botão de Ouro",
-      "number": "404",
-      "optionalAddress": "",
-      "paymentOption": "REF",
+      "paymentOption": "PIX",
       "items": [
         {
           "quantity": 2,
-          "menuId": "straw"
-        },
-        {
-          "quantity": 2,
-          "menuId": "cake"
-        },
-        {
-          "quantity": 1,
-          "menuId": "cup"
-        }
-      ],
-      "id": "5"
-    },
-    {
-      "address": "Por do Sol",
-      "number": "154",
-      "optionalAddress": "Cidade Satélite",
-      "paymentOption": "DEB",
-      "items": [
-        {
-          "quantity": 1,
-          "menuId": "coke.png"
+          "menuId": "burger"
         },
         {
           "quantity": 1,
           "menuId": "fries"
+        }
+      ],
+      "id": "ord002"
+    },
+    {
+      "address": "Rua dos Girassóis",
+      "number": "33",
+      "optionalAddress": "Apto 102",
+      "paymentOption": "DEB",
+      "items": [
+        {
+          "quantity": 1,
+          "menuId": "margherita"
         },
         {
           "quantity": 1,
-          "menuId": "burger"
+          "menuId": "calabresa"
         }
       ],
-      "id": "Pn2pm1r"
+      "id": "ord003"
+    },
+    {
+      "address": "Rua das Flores",
+      "number": "500",
+      "optionalAddress": "Condomínio Jardim",
+      "paymentOption": "REF",
+      "items": [
+        {
+          "quantity": 2,
+          "menuId": "gelato-choco"
+        },
+        {
+          "quantity": 1,
+          "menuId": "banana-split"
+        }
+      ],
+      "id": "ord004"
+    },
+    {
+      "address": "Rua São Paulo",
+      "number": "230",
+      "optionalAddress": "",
+      "paymentOption": "CRE",
+      "items": [
+        {
+          "quantity": 3,
+          "menuId": "brigadeiro"
+        },
+        {
+          "quantity": 1,
+          "menuId": "pudim"
+        }
+      ],
+      "id": "ord005"
+    },
+    {
+      "address": "Av do Sol",
+      "number": "300",
+      "optionalAddress": "",
+      "paymentOption": "CRE",
+      "items": [
+        {
+          "quantity": 5,
+          "menuId": "pao-queijo"
+        },
+        {
+          "quantity": 1,
+          "menuId": "torta-maca"
+        }
+      ],
+      "id": "jAgmyw7"
     }
   ]
 }

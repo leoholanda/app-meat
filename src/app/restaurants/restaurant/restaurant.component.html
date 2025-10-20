@@ -1,13 +1,15 @@
 <a [routerLink]="['/restaurants', restaurant?.id]">
   <div class="place-info-box">
-    <span class="place-info-box-icon"><img [src]="restaurant?.imagePath" /></span>
+    <span class="place-info-box-icon">
+      <img [ngSrc]="restaurant!.imagePath" width="120" height="120" alt="Logo do Restaurante"/>
+    </span>
 
     <div class="place-info-box-content">
       <span class="place-info-box-text">{{restaurant?.name}}</span>
       <span class="place-info-box-star"><i class="fa fa-star"></i> {{restaurant?.rating}}</span>
       <span class="place-info-box-detail">{{restaurant?.category}}</span>
       <span class="place-info-box-detail">Entrega estimada: {{restaurant?.deliveryEstimate}}</span>
-      <i class="fa fa-heart" *ngIf="restaurant?.favorite" title="Favoritos"></i>
+      <i class="fa fa-heart text-red" *ngIf="restaurant?.favorite" title="Favoritos"></i>
     </div>
   </div>
 </a>
