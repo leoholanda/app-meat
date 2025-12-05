@@ -81,6 +81,7 @@ export class PathBuilderService {
    * @returns Caminho completo
    */
   buildPath(idAgencia: number, ...segments: string[]): string {
-    return `${this.config.publicFolder}/${idAgencia}/${segments.join('/')}`;
+    const basePath = `${this.config.publicFolder}/${idAgencia}`;
+    return segments.length > 0 ? `${basePath}/${segments.join('/')}` : basePath;
   }
 }

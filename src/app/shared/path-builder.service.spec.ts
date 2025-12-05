@@ -65,7 +65,7 @@ describe('PathBuilderService', () => {
 
     it('should build generic path with no additional segments', () => {
       const path = service.buildPath(123);
-      expect(path).toBe('public/123/');
+      expect(path).toBe('public/123');
     });
   });
 

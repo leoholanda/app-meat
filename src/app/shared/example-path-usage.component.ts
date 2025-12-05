@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PathBuilderService } from './shared/path-builder.service';
+import { PathBuilderService } from './path-builder.service';
 
 /**
  * Exemplo de uso do PathBuilderService em um componente
