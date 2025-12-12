@@ -177,7 +177,7 @@
       "imagePath": "assets/img/restaurants/sweetcake.png",
       "about": "Doces feitos com amor e ingredientes selecionados.",
       "hours": "Segunda à sábado, 8h às 23h",
-      "favorite": true,
+      "favorite": false,
       "deliveryPrice": 7
     },
     {
@@ -201,7 +201,7 @@
       "imagePath": "assets/img/restaurants/pizza.png",
       "about": "Pizzas com bordas recheadas e ingredientes frescos.",
       "hours": "Todos os dias, 17h às 23h",
-      "favorite": true,
+      "favorite": false,
       "deliveryPrice": 11
     },
     {
@@ -931,6 +931,30 @@
         }
       ],
       "id": "jAgmyw7"
+    },
+    {
+      "name": "Tarso",
+      "email": "leoholanda23@gmail.com",
+      "emailConfirmation": "leoholanda23@gmail.com",
+      "address": "Rua P",
+      "number": "300",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "items": [
+        {
+          "quantity": 1,
+          "menuId": "capp"
+        },
+        {
+          "quantity": 1,
+          "menuId": "espreso"
+        },
+        {
+          "quantity": 1,
+          "menuId": "starb"
+        }
+      ],
+      "id": "-oSf3uL"
     }
   ]
 }

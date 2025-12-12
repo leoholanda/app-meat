@@ -20,7 +20,7 @@ import { AvaliacoesComponent } from './restaurant-detail/avaliacoes/avaliacoes.c
 import ptBR from '@angular/common/locales/pt'
 import {NgOptimizedImage, registerLocaleData} from "@angular/common";
 import { OrderComponent } from './order/order.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component';
@@ -61,6 +61,7 @@ registerLocaleData(ptBR);
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     NgOptimizedImage
   ],
   providers: [RestaurantsService, {provide: LOCALE_ID, useValue: 'pt-BR'}],

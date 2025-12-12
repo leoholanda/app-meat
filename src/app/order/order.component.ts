@@ -5,6 +5,7 @@ import {CarItem} from "../restaurant-detail/shopping-cart/item-cart.model";
 import {Order, OrderItem} from "./order";
 import {Router} from "@angular/router";
 import {Restaurant} from "../restaurants/restaurant/restaurant.model";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-order',
@@ -12,7 +13,11 @@ import {Restaurant} from "../restaurants/restaurant/restaurant.model";
 })
 export class OrderComponent implements OnInit{
 
+  orderForm!: FormGroup;
   restaurant?: Restaurant;
+
+  emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  numberPattern = /^[0-9]*$/;
 
   paymentOptions: RadioOptionModel[] = [
     {label: 'Dinheiro', value: 'MON'},
@@ -22,11 +27,23 @@ export class OrderComponent implements OnInit{
   ];
 
   ngOnInit() {
+
+    this.orderForm = this.formBuilder.group({
+      name: this.formBuilder.control('', [Validators.required, Validators.minLength(5)]),
+      email: this.formBuilder.control('', [Validators.required, Validators.pattern(this.emailPattern)]),
+      emailConfirmation: this.formBuilder.control('', [Validators.required, Validators.pattern(this.emailPattern)]),
+      address: this.formBuilder.control('', [Validators.required, Validators.minLength(5)]),
+      number: this.formBuilder.control('', [Validators.required, Validators.pattern(this.numberPattern)]),
+      optionalAddress: this.formBuilder.control('', []),
+      paymentOption: this.formBuilder.control('', [Validators.required])
+    });
+
     this.restaurantDeliveryValue()
   }
 
   constructor(private orderService: OrderService,
-              private router: Router) {
+              private router: Router,
+              private formBuilder: FormBuilder) {
   }
 
   restaurantDeliveryValue() {
