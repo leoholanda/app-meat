@@ -4,7 +4,9 @@ import {Injectable} from "@angular/core";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {first, Observable} from "rxjs";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class RestaurantsService {
   constructor(private http: HttpClient) {
   }
