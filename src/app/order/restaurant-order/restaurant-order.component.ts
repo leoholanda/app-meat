@@ -1,10 +1,11 @@
 import {Component, Input} from '@angular/core';
 import {Restaurant} from "../../restaurants/restaurant/restaurant.model";
-import {Location} from "@angular/common";
+import {Location, CurrencyPipe} from "@angular/common";
 
 @Component({
   selector: 'app-restaurant-order',
-  standalone: false,
+  standalone: true,
+  imports: [CurrencyPipe],
   templateUrl: './restaurant-order.component.html',
   styleUrls: ['./restaurant-order.component.css']
 })

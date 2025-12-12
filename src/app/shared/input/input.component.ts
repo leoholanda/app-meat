@@ -1,9 +1,11 @@
 import {AfterContentInit, Component, ContentChild, Input} from '@angular/core';
-import {NgModel} from "@angular/forms";
+import {NgModel, FormsModule} from "@angular/forms";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-input-container',
-  standalone: false,
+  standalone: true,
+  imports: [NgIf, FormsModule],
   templateUrl: './input.component.html'
 })
 export class InputComponent implements AfterContentInit {

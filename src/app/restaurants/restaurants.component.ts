@@ -1,10 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {Restaurant} from "./restaurant/restaurant.model";
 import {RestaurantsService} from "./restaurants.service";
+import {NgFor} from "@angular/common";
+import {RestaurantComponent} from "./restaurant/restaurant.component";
 
 @Component({
   selector: 'app-restaurants',
-  standalone: false,
+  standalone: true,
+  imports: [NgFor, RestaurantComponent],
   templateUrl: './restaurants.component.html'
 })
 export class RestaurantsComponent implements OnInit {

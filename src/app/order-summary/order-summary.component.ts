@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RatingComponent } from '../shared/rating/rating.component';
 
 @Component({
   selector: 'app-order-summary',
-  standalone: false,
+  standalone: true,
+  imports: [RatingComponent],
   templateUrl: './order-summary.component.html',
   styleUrls: ['./order-summary.component.css']
 })

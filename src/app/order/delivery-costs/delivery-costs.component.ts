@@ -1,9 +1,11 @@
 import {Component, Input} from '@angular/core';
 import {Restaurant} from "../../restaurants/restaurant/restaurant.model";
+import {CurrencyPipe} from "@angular/common";
 
 @Component({
   selector: 'app-delivery-costs',
-  standalone: false,
+  standalone: true,
+  imports: [CurrencyPipe],
   templateUrl: './delivery-costs.component.html',
   styleUrls: ['./delivery-costs.component.css']
 })

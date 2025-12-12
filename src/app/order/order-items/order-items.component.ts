@@ -1,9 +1,12 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {CarItem} from "../../restaurant-detail/shopping-cart/item-cart.model";
+import {NgIf, NgFor, CurrencyPipe} from "@angular/common";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-order-items',
-  standalone: false,
+  standalone: true,
+  imports: [NgIf, NgFor, CurrencyPipe, RouterLink],
   templateUrl: './order-items.component.html'
 })
 export class OrderItemsComponent {

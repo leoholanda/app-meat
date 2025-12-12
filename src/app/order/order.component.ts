@@ -5,10 +5,17 @@ import {CarItem} from "../restaurant-detail/shopping-cart/item-cart.model";
 import {Order, OrderItem} from "./order";
 import {Router} from "@angular/router";
 import {Restaurant} from "../restaurants/restaurant/restaurant.model";
+import {FormsModule} from "@angular/forms";
+import {InputComponent} from "../shared/input/input.component";
+import {RadioComponent} from "../shared/radio/radio.component";
+import {OrderItemsComponent} from "./order-items/order-items.component";
+import {RestaurantOrderComponent} from "./restaurant-order/restaurant-order.component";
+import {DeliveryCostsComponent} from "./delivery-costs/delivery-costs.component";
 
 @Component({
   selector: 'app-order',
-  standalone: false,
+  standalone: true,
+  imports: [FormsModule, InputComponent, RadioComponent, OrderItemsComponent, RestaurantOrderComponent, DeliveryCostsComponent],
   templateUrl: './order.component.html'
 })
 export class OrderComponent implements OnInit{

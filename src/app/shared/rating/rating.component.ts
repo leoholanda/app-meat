@@ -1,8 +1,10 @@
 import {Component, EventEmitter, Output} from '@angular/core';
+import {NgFor} from "@angular/common";
 
 @Component({
   selector: 'app-rating',
-  standalone: false,
+  standalone: true,
+  imports: [NgFor],
   templateUrl: './rating.component.html'
 })
 export class RatingComponent {

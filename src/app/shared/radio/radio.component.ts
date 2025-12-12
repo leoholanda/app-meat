@@ -1,10 +1,12 @@
 import {Component, Input, forwardRef} from '@angular/core';
 import {RadioOptionModel} from "./radio-option.model";
-import {NG_VALUE_ACCESSOR, ControlValueAccessor} from "@angular/forms";
+import {NG_VALUE_ACCESSOR, ControlValueAccessor, FormsModule} from "@angular/forms";
+import {NgFor} from "@angular/common";
 
 @Component({
   selector: 'app-radio',
-  standalone: false,
+  standalone: true,
+  imports: [NgFor, FormsModule],
   templateUrl: './radio.component.html',
   providers: [
     {

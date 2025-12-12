@@ -1,11 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {RestaurantsService} from "../restaurants/restaurants.service";
 import {Restaurant} from "../restaurants/restaurant/restaurant.model";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
+import {NgIf, CurrencyPipe} from "@angular/common";
 
 @Component({
   selector: 'app-restaurant-detail',
-  standalone: false,
+  standalone: true,
+  imports: [NgIf, CurrencyPipe, RouterLink, RouterLinkActive, RouterOutlet],
   templateUrl: './restaurant-detail.component.html',
   styleUrls: ['./restaurant-detail.component.css']
 })
