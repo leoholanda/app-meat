@@ -4,6 +4,7 @@ import {NG_VALUE_ACCESSOR, ControlValueAccessor} from "@angular/forms";
 
 @Component({
   selector: 'app-radio',
+  standalone: false,
   templateUrl: './radio.component.html',
   providers: [
     {

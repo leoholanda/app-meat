@@ -3,6 +3,7 @@ import {ItemCardapioModel} from "./item-cardapio.model";
 
 @Component({
   selector: 'app-item-cardapio',
+  standalone: false,
   templateUrl: './item-cardapio.component.html'
 })
 export class ItemCardapioComponent implements OnInit{

@@ -3,6 +3,7 @@ import {NgModel} from "@angular/forms";
 
 @Component({
   selector: 'app-input-container',
+  standalone: false,
   templateUrl: './input.component.html'
 })
 export class InputComponent implements AfterContentInit {

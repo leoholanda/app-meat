@@ -4,6 +4,7 @@ import {Location} from "@angular/common";
 
 @Component({
   selector: 'app-restaurant-order',
+  standalone: false,
   templateUrl: './restaurant-order.component.html',
   styleUrls: ['./restaurant-order.component.css']
 })

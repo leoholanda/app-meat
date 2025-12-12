@@ -3,6 +3,7 @@ import {Restaurant} from "../../restaurants/restaurant/restaurant.model";
 
 @Component({
   selector: 'app-delivery-costs',
+  standalone: false,
   templateUrl: './delivery-costs.component.html',
   styleUrls: ['./delivery-costs.component.css']
 })

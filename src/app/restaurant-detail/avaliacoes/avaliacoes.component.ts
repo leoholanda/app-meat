@@ -5,6 +5,7 @@ import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-avaliacoes',
+  standalone: false,
   templateUrl: './avaliacoes.component.html'
 })
 export class AvaliacoesComponent implements OnInit{

@@ -7,6 +7,7 @@ import {ItemCardapioModel} from "../item-cardapio/item-cardapio.model";
 
 @Component({
   selector: 'app-shopping-cart',
+  standalone: false,
   templateUrl: './shopping-cart.component.html'
 })
 export class ShoppingCartComponent implements OnInit{

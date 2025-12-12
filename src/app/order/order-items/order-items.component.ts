@@ -3,6 +3,7 @@ import {CarItem} from "../../restaurant-detail/shopping-cart/item-cart.model";
 
 @Component({
   selector: 'app-order-items',
+  standalone: false,
   templateUrl: './order-items.component.html'
 })
 export class OrderItemsComponent {

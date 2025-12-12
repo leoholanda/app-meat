@@ -2,6 +2,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-rating',
+  standalone: false,
   templateUrl: './rating.component.html'
 })
 export class RatingComponent {

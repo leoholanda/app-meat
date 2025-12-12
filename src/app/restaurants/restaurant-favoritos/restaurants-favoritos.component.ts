@@ -4,6 +4,7 @@ import {Restaurant} from "../restaurant/restaurant.model";
 
 @Component({
   selector: 'app-restaurants-favoritos',
+  standalone: false,
   templateUrl: './restaurants-favoritos.component.html',
   styleUrls: ['./restaurants-favoritos.component.css']
 })

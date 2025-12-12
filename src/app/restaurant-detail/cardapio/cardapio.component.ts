@@ -6,6 +6,7 @@ import {ItemCardapioModel} from "../item-cardapio/item-cardapio.model";
 
 @Component({
   selector: 'app-cardapio',
+  standalone: false,
   templateUrl: './cardapio.component.html'
 })
 export class CardapioComponent implements OnInit{

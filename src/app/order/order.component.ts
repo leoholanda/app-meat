@@ -8,6 +8,7 @@ import {Restaurant} from "../restaurants/restaurant/restaurant.model";
 
 @Component({
   selector: 'app-order',
+  standalone: false,
   templateUrl: './order.component.html'
 })
 export class OrderComponent implements OnInit{

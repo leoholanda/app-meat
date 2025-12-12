@@ -3,6 +3,7 @@ import {Restaurant} from "./restaurant.model";
 
 @Component({
   selector: 'app-restaurant',
+  standalone: false,
   templateUrl: './restaurant.component.html'
 })
 export class RestaurantComponent {

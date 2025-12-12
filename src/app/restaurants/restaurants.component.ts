@@ -4,6 +4,7 @@ import {RestaurantsService} from "./restaurants.service";
 
 @Component({
   selector: 'app-restaurants',
+  standalone: false,
   templateUrl: './restaurants.component.html'
 })
 export class RestaurantsComponent implements OnInit {
